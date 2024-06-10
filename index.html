@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinemax</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/4059/4059259.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header class="navbar bg-base-100 bg-[#000] w-[100%]">
+        <div class="flex-1 ps-[2rem]">
+          <a class="btn btn-ghost text-2xl" href="#home"><span class="p-0 m-0 text-[#FFCC00]">CineMax</span></a>
+        </div>
+        <div class="flex-none nav-bar">
+          <nav  class="flex">
+            <ul class="list-none flex gap-[3rem] px-[1rem] py-[2rem] text-[#fff] font-bold">
+                <li><a href="#home" class="p-[1rem] hover:bg-[#FFCC00] hover:text-[#000] rounded-xl">Home</a></li>
+                <li><a href="#genres" class="p-[1rem] hover:bg-[#FFCC00] hover:text-[#000] rounded-xl">Genres</a></li>
+                <li><a href="#favorites" class="p-[1rem] hover:bg-[#FFCC00] hover:text-[#000] rounded-xl">Favorites</a></li>
+                <li><a href="#contactus" class="p-[1rem] hover:bg-[#FFCC00] hover:text-[#000] rounded-xl">Contact Us</a></li>
+            </ul>
+          </nav>
+        </div>
+    </header>
+    <main class="main">
+        <section class="home m-auto flex flex-col items-left w-[100%] mt-[5%]" id="home">
+            <div class="overlay">
+              <div class="content text-center">
+                <h1 class="text-6xl font-bold text-[#fff]">Welcome to <span class="text-[#FFCC00] font-black">CineMax</span></h1>
+                <p class="p-[2rem] w-[40rem] text-center text-[#fff] leading-8">
+                    Your ultimate destination for discovering the best films across all genres! Whether you're a casual viewer or a cinephile, our site offers comprehensive and up-to-date rankings, curated reviews, and personalized recommendations to help you find your next favorite movie. Dive into our expertly crafted lists, explore trending titles, and share your own reviews with a community of passionate movie lovers. Join us at MovieRanker and elevate your movie-watching experience!
+                </p>
+              </div>
+            </div>
+        </section>
+        <section class="genres p-[3rem] m-auto flex flex-col items-center w-[100%] bg-[#000] h-[auto]" id="genres">
+            <h1 class="text-5xl font-bold text-[#FFCC00] mt-[5%]">Movie Genres</h1>
+            <div class="card-container lg:p-[6rem] mt-[2rem] flex flex-col w-full lg:flex-row gap-[3rem] px-[8rem] items-center">
+                <div class="card w-96 bg-[#1c1c1c] shadow-xl grid flex-grow">
+                    <figure class="h-[80%]"><img class="h-[100%]" src="https://m.media-amazon.com/images/M/MV5BNDJjNWE4NDMtMzQwMC00NjlhLTg1NjItMTQyMzY3NzdkZDIzXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_.jpg" alt="Sci-Fi" /></figure>
+                    <div class="card-bod">
+                      <h2 class="font-bold text-center text-xl w-[100%] py-[0.5rem] ">Sci-Fi</h2>
+                      <div class="card-action px-[2rem] pb-[1rem]">
+                        <a href="scifi.html" class="btn text-[#FFCC00] bg-[#000] w-[100%] hover:bg-[#FFCC00] hover:text-[#000]">Check It Out</a>
+                      </div>
+                    </div>
+                </div>
+                <div class="card w-96 bg-[#1c1c1c] shadow-xl">
+                    <figure class="h-[80%]"><img src="https://m.media-amazon.com/images/M/MV5BNzZmOTU1ZTEtYzVhNi00NzQxLWI5ZjAtNWNhNjEwY2E3YmZjXkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_.jpg" alt="Action" /></figure>
+                    <div class="card-bod">
+                      <h2 class="font-bold text-center text-xl w-[100%] py-[0.5rem] ">Action</h2>
+                      <div class="card-action px-[2rem] pb-[1rem]">
+                        <a href="actions.html" class="btn text-[#FFCC00] bg-[#000] w-[100%] hover:bg-[#FFCC00] hover:text-[#000]">Check It Out</a>
+                      </div>
+                    </div>
+                </div>
+                <div class="card w-96 bg-[#1c1c1c] shadow-xl">
+                    <figure class="h-[80%]"><img src="https://m.media-amazon.com/images/M/MV5BMTY4MTEyMzU1N15BMl5BanBnXkFtZTcwNDQ0NTc1Nw@@._V1_.jpg" alt="Shoes" /></figure>
+                    <div class="card-bod">
+                      <h2 class="font-bold text-center text-xl w-[100%] py-[0.9rem] ">Romance</h2>
+                      <div class="card-action px-[2rem] pb-[1rem]">
+                        <a href="romance.html" class="btn text-[#FFCC00] bg-[#000] w-[100%] hover:bg-[#FFCC00] hover:text-[#000]">Check It Out</a>
+                      </div>
+                    </div>
+                </div>
+                <div class="card w-96 bg-[#1c1c1c] shadow-xl">
+                    <figure class="h-[80%]"><img class="h-[100%]" src="https://m.media-amazon.com/images/M/MV5BNGZhMzc0YjYtYzgxMS00NzIwLThkNzktMzFjNjQ3MjMyZGJiXkEyXkFqcGdeQXVyMTY3ODkyNDkz._V1_.jpg" alt="Shoes" /></figure>
+                    <div class="card-bod">
+                      <h2 class="font-bold text-center text-xl w-[100%] py-[0.5rem] ">Animation</h2>
+                      <div class="card-action px-[2rem] pb-[1rem]">
+                        <a href="animations.html" class="btn text-[#FFCC00] bg-[#000] w-[100%] hover:bg-[#FFCC00] hover:text-[#000]">Check It Out</a>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="favorites p-[3rem] m-auto flex flex-col items-center w-[100%] bg-[#111] h-[auto]" id="favorites">
+          <h1 class="text-5xl font-bold text-[#FFCC00] text-center w-[100%] mt-[5%]">My Top 5 Favorites Movies</h1>
+          <div class="card-container mt-[2rem] flex flex-col w-full lg:flex-row gap-[3rem] px-[8rem]">
+            <div class="w-96 glass grid flex-grow card bg-base-300 rounded-box place-items-center">
+                <figure><img src="https://m.media-amazon.com/images/M/MV5BMjQ0MTgyNjAxMV5BMl5BanBnXkFtZTgwNjUzMDkyODE@._V1_.jpg" alt="civilwar"/></figure>
+                <div class="card-bod w-[100%]">
+                  <h2 class="font-bold text-center text-xl w-[100%] py-[0.5rem] ">Civil War 2016</h2>
+                  <div class="card-action px-[2rem] pb-[1rem]">
+                    <a href="https://youtu.be/dKrVegVI0Us" target="_blank" class="btn hover:text-[#FFCC00] hover:bg-[#000] w-[100%] bg-[#FFCC00] text-[#000]">Watch Now</a>
+                  </div>
+                </div>
+            </div> 
+            <div class="w-96 glass grid flex-grow card bg-base-300 rounded-box place-items-center">
+                <figure><img src="https://m.media-amazon.com/images/M/MV5BOTIzYmUyMmEtMWQzNC00YzExLTk3MzYtZTUzYjMyMmRiYzIwXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_FMjpg_UX1000_.jpg" alt="car!"/></figure>
+                <div class="card-bod w-[100%]">
+                  <h2 class="font-bold text-center text-xl w-[100%] py-[0.5rem] ">Hobbs and Shaw 2018</h2>
+                  <div class="card-action px-[2rem] pb-[1rem]">
+                    <a href="https://youtu.be/HZ7PAyCDwEg" target="_blank" class="btn hover:text-[#FFCC00] hover:bg-[#000] w-[100%] bg-[#FFCC00] text-[#000]">Watch Now</a>
+                  </div>
+                </div>
+            </div>
+            <div class="w-96 glass grid flex-grow card bg-base-300 rounded-box place-items-center">
+                <figure><img src="https://m.media-amazon.com/images/M/MV5BYWVhZjZkYTItOGIwYS00NmRkLWJlYjctMWM0ZjFmMDU4ZjEzXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_FMjpg_UX1000_.jpg" alt="car!"/></figure>
+                <div class="card-bod w-[100%]">
+                  <h2 class="font-bold text-center text-xl w-[100%] py-[0.5rem] ">Justice League 2017</h2>
+                  <div class="card-action px-[2rem] pb-[1rem]">
+                    <a href="https://youtu.be/r9-DM9uBtVI" target="_blank" class="btn hover:text-[#FFCC00] hover:bg-[#000] w-[100%] bg-[#FFCC00] text-[#000]">Watch Now</a>
+                  </div>
+                </div>
+            </div>
+          </div>
+          <div class="card-container mt-[2rem] flex flex-col w-full lg:flex-row gap-[3rem] px-[8rem]">
+            <div class="w-96 glass grid flex-grow card bg-base-300 rounded-box place-items-center">
+                <figure><img src="https://m.media-amazon.com/images/M/MV5BMTYzODQzYjQtNTczNC00MzZhLTg1ZWYtZDUxYmQ3ZTY4NzA1XkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_.jpg" alt="car!"/></figure>
+                <div class="card-bod w-[100%]">
+                  <h2 class="font-bold text-center text-xl w-[100%] py-[0.5rem] ">Wonder Woman 2017</h2>
+                  <div class="card-action px-[2rem] pb-[1rem]">
+                    <a href="https://www.youtube.com/watch?v=VSB4wGIdDwo&pp=ygUUd29uZGVyIHdvbWFuIHRyYWlsZXI%3D" target="_blank" class="btn hover:text-[#FFCC00] hover:bg-[#000] w-[100%] bg-[#FFCC00] text-[#000]">Watch Now</a>
+                  </div>
+                </div>
+            </div> 
+            <div class="w-96 glass grid flex-grow card bg-base-300 rounded-box place-items-center">
+                <figure><img src="https://m.media-amazon.com/images/M/MV5BYzQ0ZWIxZjAtYWI3Yy00MGM0LWFjOGYtNzcyYThiOTA3ODI1XkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_.jpg" alt="car!"/></figure>
+                <div class="card-bod w-[100%]">
+                  <h2 class="font-bold text-center text-xl w-[100%] py-[0.5rem] ">Kungu Panda 2 2010</h2>
+                  <div class="card-action px-[2rem] pb-[1rem]">
+                    <a href="https://youtu.be/10r9ozshGVE" target="_blank" class="btn hover:text-[#FFCC00] hover:bg-[#000] w-[100%] bg-[#FFCC00] text-[#000]">Watch Now</a>
+                  </div>
+                </div>
+            </div>
+            <div class="w-96 glass grid flex-grow card bg-base-300 rounded-box place-items-center">
+                <figure><img src="https://m.media-amazon.com/images/M/MV5BMjE5MzcyNjk1M15BMl5BanBnXkFtZTcwMjQ4MjcxOQ@@._V1_.jpg" alt="car!"/></figure>
+                <div class="card-bod w-[100%]">
+                  <h2 class="font-bold text-center text-xl w-[100%] py-[0.5rem] ">Iron Man 3 2012</h2>
+                  <div class="card-action px-[2rem] pb-[1rem]">
+                    <a href="https://youtu.be/oYSD2VQagc4" target="_blank" class="btn hover:text-[#FFCC00] hover:bg-[#000] w-[100%] bg-[#FFCC00] text-[#000]">Watch Now</a>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </section>
+    </main>
+    <footer class="footer footer-center p-10 bg-[#FFCC00] text-primary-content" id="contactus">
+        <aside>
+          <p class="font-bold text-xl">
+            Cinemax
+          </p> 
+          <p>Copyright © 2024 - All right reserved</p>
+        </aside> 
+        <nav>
+          <div class="grid grid-flow-col gap-4">
+            <a class="text-4xl hover:text-[red]" href="https://www.linkedin.com/in/putshu-lunghe-samuel-1a97911b1/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+            <a class="text-4xl hover:text-[red]" href="https://x.com/LungheSam" target="_blank"><i class='bx bxl-twitter' ></i></a>
+            <a class="text-4xl hover:text-[red]" href="https://www.youtube.com/channel/UCiwUrgosCFoRp2XR0cDD5Bw" target="_blank"><i class='bx bxl-youtube' ></i></a>
+          </div>
+        </nav>
+      </footer>
+</body>
+</html>
